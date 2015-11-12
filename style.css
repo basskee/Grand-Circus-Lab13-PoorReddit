@@ -1,0 +1,70 @@
+
+/*=======font============*/
+
+
+h2 {
+
+	text-decoration: none !important;
+	font-size: 16px;
+	width:15em;
+
+}
+
+
+p{
+
+
+
+
+
+}
+
+
+img{
+	border: black 19px solid;
+	padding: 5px;
+	margin: 5px;
+	width: 200px;
+	height: 200px;
+}
+
+
+
+
+
+/*=======Body============*/
+
+body{
+text-align: center;
+background-color: lightgrey;
+
+
+
+}
+
+#wrapper{
+width:960px !important;
+/*height:1000px;*/
+background-color: lightblue !important;
+margin: 0 auto !important;
+border:black thin solid;
+
+}
+
+header{
+	height:200px;
+
+	background-color:lightgreen;
+	border:solid thin black;
+	margin:5px;
+}
+
+
+/*=======.pics============*/
+
+ .pics{
+	display: inline-block;
+	margin: 20px 30px;
+	vertical-align: top;
+}
+
