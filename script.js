@@ -8,38 +8,24 @@ $(document).ready(function(){
 
 		$.each(posts, function(index, post){
 
-		// var $container = $('<div />').appendTo($('#image-container'));
-		var $container = $('<div class="pics" />').appendTo($('#image-container'));
+		var $container = $('<div />').appendTo($('body'));
 
-		// var $title = $('<a />').html('<h2>' +post.data.title +'</h2>').appendTo($container);
-		// $title.attr("href", post.data.url);
-		$('<p />').text(post.data.author).appendTo($container);
-		$('<img />').attr('src',post.data.thumbnail).appendTo($container);
-		var $title = $('<a />').html('<h2>' +post.data.title +'</h2>').appendTo($container);
+		var $title = $('<a />').html('<h1>' +post.data.title +'</ht>').appendTo($container);
 		$title.attr("href", post.data.url);
-
-	
+		$('<img />').attr('src',post.data.thumbnail).appendTo($container);
+		$('<p />').text(post.data.author).appendTo($container);
 
 		var postDate = new Date(post.data.created *1000);
 
-			// Date
-
-		// $('<p />').text('posted: '+postDate.postDate() + '/' +postDate.getDay()+
-		//  '/' +postDate.getYear()).appendTo($container);
+		$('<p />').text('posted:  '+postDate.getMonth() + '/' +postDate.getDay()+
+		 '/' +postDate.getYear()).appendTo($container);
 
 		
 		});
 
 	});
 
-	$( "" ).addClass( "myClass yourClass" );
-
-
-
-
 });
-
-
 
 
 
